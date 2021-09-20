@@ -13,7 +13,7 @@ function styles() {
 
 // Minify JS
 function scripts() {
-    return src('app/js/script.js', { sourcemaps: true })
+    return src(['node_modules/bootstrap/dist/js/bootstrap.bundle.min.js', 'app/js/script.js'], { sourcemaps: true })
         .pipe(terser())
         .pipe(dest('dist', { sourcemaps: '.' }));
 }
