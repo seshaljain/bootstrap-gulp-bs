@@ -2,13 +2,276 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gulp + BrowserSync Demo</title>
-    <link href="/dist/style.css" rel="stylesheet">
+
+    <link href="dist/style.css" rel="stylesheet">
+    
 </head>
-<body>
-    <div class="container">
-        <p>Hello world!</p>
+
+<body >
+  <header><img src="images/cart.jpg"></header>
+<img src="images/pic1.jpg" width="100%" height="90%"></img>
+
+    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class=" container-fluid">
+    <a class="navbar-brand">TOY-TOWN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#HOME">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#CONTACT">Contact Us</a>
+        </li>
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
-    <script src="/dist/script.js"></script>
+  </div>
+</nav>
+    </div>
+    <section class="HOME" id="HOME">
+<div class="container">
+  <span class="a">
+      <h1><br><u>New Arrivals<br></u></h1>  
+  </span>
+    <div class="row ">
+      <div class="col-md-3"> <img src="images/teddy.jpg" alt="teddy bear" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Teddy Bear
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Teddy bear</li>
+              <li>Washable</li>
+              <li>Age: 2+ Years</li>
+              <li>Size: 91 cm</li>
+              <li>Filling Material: Fiber</li>
+              <li>External Material: Fabric</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">399.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+       
+    </div> 
+    <br>
+    <div class="row ">
+      <div class="col-md-3"> <img src="images/car.jpg" alt="remote car" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Remote-Control-Car
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Epoch-Air-Remote Control-Car</li>
+              <li>360-degree front-wheel</li>
+              <li>super power</li>
+              <li>Safe And Durable</li>
+              <li>Compact size and lightweight</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">1099.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-3"><img src="images/barbie.jpg" alt="barbie doll" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Barbie Doll
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Color Surprise Barbie Doll</li>
+              <li>Color Changing</li>
+              <li>Age: 3-6 Years</li>
+              <li>Fit: Regular</li>
+              <li>Length:	Long</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">1199.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+        
+    </div> 
+    <br>
+    <div class="row ">
+      <div class="col-md-3"><img src="images/blaster.jpg" alt="blaster" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Blasters
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Alpha Strike Lynx SD-1 and Stinger</li>
+              <li>Material: Plastic</li>
+              <li>Dimensions LxWxH :6.7 x 61 x 39.4 cms</li>
+              <li>Item Weight: 700g</li>
+              <li>Batteries Required:	No</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">1887.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+<br>
+
+  <div class="row row-cols-1">
+    <span class="b">
+        <h1><br><u><br>All Time Favourites<br></u></h1>  
+    </span> 
+  </div>
+  
+  <br>
+    <div class="row">
+      <div class="col-md-3"><img src="images/tenthouse.jpg" alt="tent house" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">TENT HOUSE
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Doll House Tent</li>
+              <li>Extremely Light Weight </li>
+              <li>Water Proof</li>
+              <li>Dimensions: LxWxH	95x72x10.2 Cms</li>
+              <li>Item Weight	0.39 Kgs</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">699.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+        
+    </div> 
+    <br>
+    <div class="row ">
+      <div class="col-md-3"><img src="images/hotwheels.jpg" alt="hotwheels" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Hot Wheels
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Hot Wheels Cars Batman Batmobile</li>
+              <li>Die-Cast metal model</li>
+              <li>Justice League-6 cars</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">799.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div> 
+       
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-md-3">
+        <img src="images/doctorset.jpg" alt="doctor set" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Doctor Set
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: Doctor's Play</li>
+              <li>Includes stethoscopes, thermometers, medicine bottles, scissors, ,shelves</li>
+              <li>can be turned into a toy table within seconds</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">349.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+        
+    </div> 
+    <br>
+    <div class="row ">    
+      <div class="col-md-3">
+        <img src="images/citybuilderset.jpg" alt="city builder set" style="width:300px;height:250px;"></div>
+        <div class="col-md-6">Builder set
+          <br>
+          <br>
+          <div class="row">
+          <div class="col-md-5">
+            Specifications
+            <ul>
+              <li> Character: CityBuilder Model Making Kit </li>
+              <li>Colour: Grey</li>
+              <li>Material: Cardboard</li>
+              <li>Scale: 1:43</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h4 text-align="right">950.00 Rs.<br><br>
+              <a href="#" class="button">ADD TO CART</a>
+            </h4>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+  </div></section>
+    <br><br>
+    <section class="CONTACT" id="CONTACT">
+    <div class="contact">
+<h2>Contact Us</h2>
+<img src="images/mail.jpg" width="30px" height="30px">  <a href="mailto:arohijain2001@gmail.com">arohijain2001@gmail.com</a>
+<br><br>
+<img src="images/phone.jpg" width="30px" height="30px">    7000841948</a><br><br>
+Address: TOY-TOWN, Hoshangabad Road, New Delhi<br><br>
+</div></section>
+    
+
+  <script src="/dist/script.js"></script>
 </body>
 </html>

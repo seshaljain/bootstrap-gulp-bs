@@ -1,3 +1,138 @@
-$body-color: rebeccapurple;
+// $body-color: rebeccapurple;
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+// .margin,border{
+//   background-color: rgba(0, 255, 255, 0.233);
+    
+// }
+// .navbar{
+//     // position:
+// }
+.container{
+    margin: 3px solid black;
+    background-color: pink ;
+    padding-left: 0 rem;
+    margin-left: 1 rem;
+    // padding-right: 0%;
+}
+div.container{
+    border: 1px solid black;
+}
+body{
+    background: black;
+    
+}
+div.contact{
+    text-align: center;
+    justify-content: center;
+    background-color: gray;
+    color: wheat;
+    padding: 1%;
+
+}
+a:link {
+    color: beige;
+  }
+  
+  
+  a:hover {
+    color: lightcyan;
+  }
+  
+  
+  
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 4rem;
+    background: transparent;
+    padding-right: 0px;
+    padding-top: 0rem;
+    //border: 1px solid black;
+    display: flex;
+    //align-items: center;
+    justify-content: right;
+    flex-flow: column;
+    text-align: right;
+}
+
+h4{
+    text-align: right;
+    justify-content: right;
+    
+    color:pink;
+    
+    
+}
+
+a.button {
+    background-color: lightcyan;
+    border: 2px solid yellow;
+    color: black;
+    padding: 15px 32px;
+    border-radius:12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+img.container{
+    border: 1px solid black;
+}
+div.col{
+    font-family: 'Apple Chancery, cursive';
+}
+
+
+div.col-md-6{
+    border: 1px solid white; 
+    background-color: black;
+    border-left: none;
+    text-align: left;
+    font-family: 'Lucida Handwriting';
+    color: lightcyan;
+    
+    
+}
+
+div.col{
+    border: 1px solid black; 
+}
+div.col-md-3{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 6px;;
+    border: 1px solid white;
+    background-color: black;
+    border-right: none;
+    border-left: 7px solid pink;
+    
+}
+span.a{
+    text-align: center;
+    font-style: italic;
+    text-shadow: darkgray;
+    color: hsl(250, 81%, 31%);
+    padding: 5px;
+    font-family: 'Lucida Handwriting';
+//     width: 100px;
+//   height: 100px;
+//   border: 1px solid blue; 
+//   background-color: hotpink;
+}
+span.b{
+    text-align: center;
+    font-style: italic;
+    text-shadow: darkgray;
+    color: hsl(250, 81%, 31%);
+    padding: 5px;
+    font-family: 'Lucida Handwriting';
+//     width: 100px;
+//   height: 100px;
+//   border: 1px solid blue; 
+//   background-color: hotpink;
+}
