@@ -6,12 +6,12 @@
 //   background-color: rgba(0, 255, 255, 0.233);
     
 // }
-// .navbar{
-//     // position:
-// }
+.navbar{
+    border: 1px solid white;
+}
 .container{
     margin: 3px solid black;
-    background-color: pink ;
+    //background-color: pink ;
     padding-left: 0 rem;
     margin-left: 1 rem;
     // padding-right: 0%;
@@ -20,8 +20,14 @@ div.container{
     border: 1px solid black;
 }
 body{
-    background:gray;
-    
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/81/743/637/toy-story-toy-story-3-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-right: 3rem;
+    // padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
 }
 div.contact{
     text-align: center;
@@ -79,9 +85,9 @@ a.button {
     font-size: 16px;
   }
 
-img.container{
-    border: 1px solid black;
-}
+// img.container{
+//     border: 1px solid black;
+// }
 div.col{
     font-family: 'Apple Chancery, cursive';
 }
@@ -106,17 +112,17 @@ div.col-md-3{
     padding-bottom: 3px;
     padding-left: 7px;
     padding-right: 6px;;
-    border: 1px solid white;
-    background-color: black;
+    //border: 1px solid black;
+    background-color: transparent;
     border-right: none;
-    border-left: 7px solid pink;
+   // border-left: 7px solid pink;
     
 }
 span.a{
     text-align: center;
     font-style: italic;
     text-shadow: darkgray;
-    color: hsl(250, 81%, 31%);
+    color: lightcyan;
     padding: 5px;
     font-family: 'Lucida Handwriting';
 //     width: 100px;
@@ -128,7 +134,7 @@ span.b{
     text-align: center;
     font-style: italic;
     text-shadow: darkgray;
-    color: hsl(250, 81%, 31%);
+    color: lightcyan;
     padding: 5px;
     font-family: 'Lucida Handwriting';
 //     width: 100px;
