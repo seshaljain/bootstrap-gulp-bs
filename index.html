@@ -4,46 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gulp + BrowserSync Demo</title>
-
+    
     <link href="dist/style.css" rel="stylesheet">
+    
     
 </head>
 
 <body>
- <header class="container-fluid"> 
-   <div class="container-fluid">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class=" container-fluid">
-    <a class="navbar-brand">TOY-TOWN</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#HOME">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#CONTACT">Contact Us</a>
-        </li>
-        
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li> -->
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  <header class="container-fluid"> 
+       
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class=" container-fluid">
+        <a class="navbar-brand">TOY-TOWN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#product">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#CONTACT">Contact Us</a>
+            </li>
+          </ul>
+         <div class="cart">
+
+          <a id="carticon" class="d-inline float-right toggler" href="#cart" data-toggle="collapse" 
+          data-target="#cart"><i class=" fas fa-shopping-cart "></i>
+            <span class="badge badge-light">0</span>
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="50" height="50"
+              viewBox="0 0 172 172"
+              style=" fill:#000000 ;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1"
+               stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" 
+               stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" 
+               style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff">
+                <path d="M58.71089,16.53911c-1.82679,0 -3.30769,1.4809 -3.30769,3.30769c0,1.82679 1.4809,3.30769 3.30769,3.30769c1.82679,0 3.30769,-1.4809 3.30769,-3.30769c0,-1.82679 -1.4809,-3.30769 -3.30769,-3.30769zM117.42243,18.19295c-2.73612,0 -4.96154,2.22575 -4.96154,4.96154c0,2.73579 2.22542,4.96154 4.96154,4.96154c2.73579,0 4.96154,-2.22575 4.96154,-4.96154c0,-2.73579 -2.22575,-4.96154 -4.96154,-4.96154zM16.53782,28.11603c-1.82386,0 -3.30769,1.48383 -3.30769,3.30769c0,1.82386 1.48383,3.30769 3.30769,3.30769h14.88462c0.55305,0 1.06943,0.27638 1.37605,0.73648l6.12504,9.1866h9.25508l-11.02585,-16.53846zM144.71089,29.76988c-1.82608,0.001 -3.30588,1.48161 -3.30588,3.30769c0,1.82608 1.4798,3.30669 3.30588,3.30769c1.82608,-0.001 3.30588,-1.48161 3.30588,-3.30769c0,-1.82608 -1.4798,-3.30669 -3.30588,-3.30769zM39.90614,47.96218l1.21325,9.92308h21.72611v-9.92308h-11.57692zM66.1532,47.96218v9.92308h16.53846v-9.92308zM85.99936,47.96218v9.92308h16.53846v-9.92308zM105.84551,47.96218v9.92308h16.53846v-9.92308zM125.69166,47.96218v9.92308h26.8905l2.42586,-9.92308zM41.52381,61.19295l1.2126,9.92308h20.10909v-9.92308zM66.1532,61.19295v9.92308h16.53846v-9.92308zM85.99936,61.19295v9.92308h16.53846v-9.92308zM105.84551,61.19295v9.92308h16.53846v-9.92308zM125.69166,61.19295v9.92308h23.65581l2.42586,-9.92308zM25.63397,62.8468c-1.82679,0 -3.30769,1.4809 -3.30769,3.30769c0,1.82679 1.4809,3.30769 3.30769,3.30769c1.82679,0 3.30769,-1.4809 3.30769,-3.30769c0,-1.82679 -1.4809,-3.30769 -3.30769,-3.30769zM43.14148,74.42372l1.21261,9.92308h18.49142v-9.92308zM66.1532,74.42372v9.92308h16.53846v-9.92308zM85.99936,74.42372v9.92308h16.53846v-9.92308zM105.84551,74.42372v9.92308h16.53846v-9.92308zM125.69166,74.42372v9.92308h20.42112l2.42585,-9.92308zM44.7585,87.65449l1.2126,9.92308h16.8744v-9.92308zM66.1532,87.65449v9.92308h16.53846v-9.92308zM85.99936,87.65449v9.92308h16.53846v-9.92308zM105.84551,87.65449v9.92308h16.53846v-9.92308zM125.69166,87.65449v9.92308h17.18643l2.4265,-9.92308zM21.49935,94.26988c-2.73579,0 -4.96154,2.22542 -4.96154,4.96154c0,2.73579 2.22575,4.96154 4.96154,4.96154c2.73579,0 4.96154,-2.22575 4.96154,-4.96154c0,-2.73612 -2.22575,-4.96154 -4.96154,-4.96154zM46.37553,100.88526l0.80883,6.61538h-1.70424c-6.38352,0 -11.57692,5.19341 -11.57692,11.57692c0,6.38352 5.19341,11.57692 11.57692,11.57692h19.01923h62.84615h30.59615c0.91358,0 1.65385,-0.74026 1.65385,-1.65385c0,-0.91358 -0.74026,-1.65385 -1.65385,-1.65385h-112.46154c-4.55965,0 -8.26923,-3.70958 -8.26923,-8.26923c0,-4.55965 3.70958,-8.26923 8.26923,-8.26923h102.53846c0.91358,0 1.65385,-0.74026 1.65385,-1.65385c0,-0.91358 -0.74026,-1.65385 -1.65385,-1.65385h-7.56635l1.61767,-6.61538h-16.37824v6.61538h-3.30769v-6.61538h-16.53846v6.61538h-3.30769v-6.61538h-16.53846v6.61538h-3.30769v-6.61538h-16.53846v6.61538h-3.30769v-6.61538zM127.34551,130.65449c-6.38352,0 -11.57692,5.19341 -11.57692,11.57692c0,6.38352 5.19341,11.57692 11.57692,11.57692c6.38352,0 11.57692,-5.19341 11.57692,-11.57692c0,-6.38352 -5.19341,-11.57692 -11.57692,-11.57692zM64.49935,130.65449c-6.38352,0 -11.57692,5.19341 -11.57692,11.57692c0,6.38352 5.19341,11.57692 11.57692,11.57692c6.38352,0 11.57692,-5.19341 11.57692,-11.57692c0,-6.38352 -5.19341,-11.57692 -11.57692,-11.57692zM32.24935,135.61603c-1.82679,0 -3.30769,1.4809 -3.30769,3.30769c0,1.82679 1.4809,3.30769 3.30769,3.30769c1.82679,0 3.30769,-1.4809 3.30769,-3.30769c0,-1.82679 -1.4809,-3.30769 -3.30769,-3.30769zM64.49935,137.26988c2.73579,0 4.96154,2.22542 4.96154,4.96154c0,2.73579 -2.22575,4.96154 -4.96154,4.96154c-2.73579,0 -4.96154,-2.22575 -4.96154,-4.96154c0,-2.73612 2.22575,-4.96154 4.96154,-4.96154zM127.34551,137.26988c2.73579,0 4.96154,2.22542 4.96154,4.96154c0,2.73579 -2.22575,4.96154 -4.96154,4.96154c-2.73612,0 -4.96154,-2.22575 -4.96154,-4.96154c0,-2.73612 2.22542,-4.96154 4.96154,-4.96154zM64.49935,140.57757c-0.91193,0 -1.65385,0.74192 -1.65385,1.65385c0,0.91193 0.74192,1.65385 1.65385,1.65385c0.91193,0 1.65385,-0.74192 1.65385,-1.65385c0,-0.91193 -0.74192,-1.65385 -1.65385,-1.65385zM127.34551,140.57757c-0.91193,0 -1.65385,0.74192 -1.65385,1.65385c0,0.91193 0.74192,1.65385 1.65385,1.65385c0.91193,0 1.65385,-0.74192 1.65385,-1.65385c0,-0.91193 -0.74192,-1.65385 -1.65385,-1.65385zM157.94166,142.23141c-1.82661,0 -3.30737,1.48076 -3.30737,3.30737c0,1.82661 1.48076,3.30737 3.30737,3.30737c1.82661,0 3.30737,-1.48076 3.30737,-3.30737c0,-1.82661 -1.48076,-3.30737 -3.30737,-3.30737z"></path></g></g>
+            </svg>  
+            <span class="badge badge-light">0</span>
+          </a>
+        </nav>
+        <div class="container-fluid products">
+          <div class="collapse" id="cart">
+                <h4 class="empty">Your Shopping Cart is Empty.</h4>
+            <div class="container-fluid list none">
+              <div class="row heading">
+                  <div class="col-5">
+                      <h4 class="a">Selected Items</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="a">Price</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="a">Quantity</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="a">Total</h4>
+                  </div>
+              </div>
+              <hr>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Teddy Bear</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>399</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>399</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times"></i>Remove</a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Remote-Control-Car</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>1099</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>1099</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Barbie doll</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>1199</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>1199</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Blasters</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>1887</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>1887</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4> Doll House Tent</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>699</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>699</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Hot Wheels</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>799</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>799</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Doctor Set</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>349</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>349</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <div class="row item none">
+                  <div class="col-5">
+                      <h4>Builder Set</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4>950</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="quantity">1</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class=tprice>950</h4>
+                  </div>
+                  <div class="col-1">
+                      <a class="removebtn"><i class="fas fa-times">Remove</i></a>
+                  </div>
+              </div>
+              <hr>
+              
+              <div class="row heading">
+                  <div class="col-3">
+                      <input id="coupon" type="text" class="ede form-control" placeholder="Coupon">
+                  </div>
+                  <div class="col-4">
+                      <button type="submit" id="apply" class="ede btn btn-outline-light">Apply</button>
+                  </div>
+                  <div class="col-2 b">
+                      <h4 id="topay" class="">To Pay</h4>
+                  </div>
+                  <div class="col-2">
+                      <h4 class="fprice">0</h4>
+                  </div>
+                  <div class="col-1">
+                  </div>
+              </div>
+              <div class="row heading">
+                  <div class="col-3">
+                      <p id="d200">Discount of Rs.200 Applied.</p>
+                  </div>
+                  <div class="col-4">
+                      <button type="submit" id="placeorder" class="ede btn btn-outline-light">Place Order</button>
+                  </div>
+                  <div class="col-2">
+                  </div>
+                  <div class="col-2">
+                  </div>
+                  
+              </div>
+            </div>  
+          </div>
+    
+         </div>
+        </div>
+      </div>
+    
+
+    
+  </header>
+  
+  <img src="images/bg2.jpg" width="100%" height="100%">
+  </img>
     </div>
-  </div>
-</nav>
-</header>
-<img src="images/bg2.jpg" width="100%" height="100%">
-</img>
-    </div>
-    <section class="HOME" id="HOME">
-<div class="container">
+<section id="product">
+    
+
+<div class="container" id="product">
   <span class="a"><b>
       <h1><br><u>New Arrivals<br></u></h1>  
   </span>
@@ -65,8 +270,8 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">399.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">399.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
@@ -91,14 +296,14 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">1099.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">1099.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
-      </div>
-        
+      </div>   
     </div>
+
     <br><br>
     <div class="row">
       <div class="col-md-3"><img src="images/barbie.jpg" alt="barbie doll" style="width:300px;height:250px;"></div>
@@ -117,8 +322,8 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">1199.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">1199.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
@@ -143,8 +348,8 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">1887.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">1887.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
@@ -177,8 +382,8 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">699.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">699.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
@@ -201,8 +406,8 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">799.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">799.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
@@ -227,8 +432,8 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">349.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">349.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
@@ -253,27 +458,38 @@
             </ul>
           </div>
           <div class="col">
-            <h4 text-align="right">950.00 Rs.<br><br>
-              <a href="#" class="button">ADD TO CART</a>
+            <h4 text-align="right" class="cost">950.00 Rs.<br><br>
+              <button type="button" class="addtocartB btn btn-primary float-right">Add to Cart</button>
             </h4>
           </div>
         </div>
       </div>
         
     </div></b>
-  </div></section>
+  </div>
+</section>
     <br><br><br>
-    <section class="CONTACT" id="CONTACT">
-    <div class="contact">
+
+<div class="CONTACT" id="CONTACT">
+    
 <h2>Contact Us</h2>
 <img src="images/mail.jpg" width="30px" height="30px">  <a href="mailto:arohijain2001@gmail.com">arohijain2001@gmail.com</a>
 <br><br>
 <img src="images/phone.jpg" width="30px" height="30px">    7000841948</a><br><br>
 Address: TOY-TOWN, Hoshangabad Road, New Delhi<br><br>
-</div></section>
+</div>
     
-
-  <script src="/dist/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+crossorigin="anonymous"></script>
+<script src="/dist/script.js"></script>
+<script src="dist/script.js.map"></script>
   
 </body>
 </html>

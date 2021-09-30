@@ -2,18 +2,13 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-// .margin,border{
-//   background-color: rgba(0, 255, 255, 0.233);
-    
-// }
-// .navbar{
-//     border: 1px solid white;
-// }
+
 .container{
     margin: 3px solid black;
     //background-color: pink ;
     padding-left: 0 rem;
     margin-left: 1 rem;
+    margin-right: 1 rem;
     // padding-right: 0%;
 }
 div.container{
@@ -33,7 +28,7 @@ body{
     margin-right: 1rem;
     // background-color: pink;
 }
-div.contact{
+#CONTACT{
     text-align: center;
     justify-content: center;
     background-color: gray;
@@ -49,9 +44,7 @@ a:link {
   a:hover {
     color: lightcyan;
   }
-  header.nav{
-      position: fixed;
-  }
+ 
   
   h1.welcome{
       align-items: center;
@@ -59,20 +52,7 @@ a:link {
       font-family: 'Lucida Handwriting';
       
   }
-header{
-    position: fixed;
-    // height: 100%;
-    // width: auto;
-    //background: transparent;
-    // padding-right: 0px;
-    // padding-top: 0rem;
-    border: 1px solid white;
-    //display: flex;
-    //align-items: center;
-    //justify-content: right;
-    // flex-flow: column;
-    // text-align: right;
-}
+
 
 h4{
     text-align: right;
@@ -83,20 +63,24 @@ h4{
     
 }
 
-a.button {
-    background-color: lightcyan;
+button.addtocartB {
+    background-color:lightcyan;
     border: 2px solid black;
-    color: brown;
+    color: black;
     padding: 15px 32px;
     border-radius:12px;
     text-align: center;
     display: inline-block;
     font-size: 16px;
+    
+  }
+  button.addtocartB:hover{
+      background-color: yellow;
+      color: black;
+      font-family: cursive;
   }
 
-// img.container{
-//     border: 1px solid black;
-// }
+
 div.col{
     font-family: 'Apple Chancery, cursive';
 }
@@ -104,7 +88,7 @@ div.col{
 
 div.col-md-6{
     border: 2px solid black; 
-    background-color: pink;
+    background-color:pink;
     border-left: none;
     text-align: left;
     font-family: 'Lucida Handwriting';
@@ -114,9 +98,7 @@ div.col-md-6{
     
 }
 
-// div.col{
-//     border: 1px solid black; 
-// }
+
 div.col-md-3{
     padding-top: 3px;
     padding-bottom: 3px;
@@ -151,4 +133,73 @@ span.b{
 //   height: 100px;
 //   border: 1px solid blue; 
 //   background-color: hotpink;
+}
+header{
+    position: fixed;
+    // height: 100%;
+    // width: auto;
+    // background: transparent;
+    // padding-right: 0px;
+    // padding-top: 0rem;
+    border: 1px solid white;
+    //display: flex;
+    //align-items: center;
+    //justify-content: right;
+    // flex-flow: column;
+    // text-align: right;
+    opacity: 0.8;
+}
+
+#cart.collapse{
+    background-color: lightcyan;
+    color: lightslategray;
+    opacity: 1;
+ }
+
+#coupon{
+    color: lightsteelblue;
+    
+}
+#coupon:hover{
+    background-color:yellow;
+    color: black;
+}
+#d200{
+    color: lightskyblue;
+}
+#apply{
+    color: lightsteelblue;
+}
+#apply:hover{
+    background-color:yellow;
+    color: black;
+}
+#placeorder{
+    color: lightsteelblue;
+}
+#placeorder:hover{
+    background-color:yellow;
+    color: black;
+}
+
+header.container-fluid {
+    position: fixed;
+//  background-color: black !important;
+ opacity: 1.0 ;
+ color: white;
+ padding-right: 1rem;
+}
+#cart{
+   margin-right: 1rem;
+    padding-right: 2rem;
+}
+.removebtn{
+    font-family: cursive;
+    color: chocolate;
+    border: 1px solid black;
+    background-color: pink;
+    cursor: pointer;
+}
+.removebtn:hover{
+    color: red;
 }
