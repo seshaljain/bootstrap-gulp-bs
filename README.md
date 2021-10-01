@@ -12,6 +12,9 @@ Install dependencies:
 npm i
 ```
 
+Make sure you've `gulp` installed globally. If not, head over to 
+https://gulpjs.com/docs/en/getting-started/quick-start first to install gulp. 
+
 Run the build chain:
 
 ```sh
