@@ -6,14 +6,25 @@ Clone this repository:
 git clone https://github.com/seshaljain/bootstrap-gulp-bs.git
 ```
 
+Move inside the cloned repository:
+
+```sh
+cd bootstrap-gulp-bs
+```
+
 Install dependencies:
 
 ```sh
 npm i
 ```
 
-Make sure you've `gulp` installed globally. If not, head over to 
-https://gulpjs.com/docs/en/getting-started/quick-start first to install gulp. 
+Make sure you've `gulp` installed globally. To do so:
+
+```sh
+npm i -g gulp-cli
+```
+
+Also, head over to https://gulpjs.com/docs/en/getting-started/quick-start to get a quick grasp on getting started with gulp.
 
 Run the build chain:
 
